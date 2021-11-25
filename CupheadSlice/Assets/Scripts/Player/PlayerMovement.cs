@@ -4,51 +4,48 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    Rigidbody2D rb2d;
     [SerializeField]
-    private float walkSpeed = 1;
+    private float walkSpeed = 1f;
+    [SerializeField]
+    private float jumpForce = 10f;
 
-    public const string RIGHT = "right";
-    public const string LEFT = "left";
+    private float jumpTimeCounter;
+    [SerializeField]
+    private float jumpTime;
 
-    string buttonPressed;
-
-    private void Start()
-    {
-        rb2d = GetComponent<Rigidbody2D>();
-    }
+    public bool isGrounded = false;
+    private bool isJumping = false;
 
     private void Update()
     {
-        if (Input.GetKey(KeyCode.D))
-        {
-            buttonPressed = RIGHT;
-        }
-        else if (Input.GetKey(KeyCode.A))
-        {
-            buttonPressed = LEFT;
-        }
-        else
-        {
-            buttonPressed = null;
-        }
+        Jump();
+
+        Vector3 movement = new Vector3(Input.GetAxis("Horizontal"), 0f, 0f);
+        transform.position += movement * Time.deltaTime * walkSpeed;//< ^ Lopen
     }
 
-    private void FixedUpdate()
+    private void Jump()
     {
-        if (buttonPressed == RIGHT)
+        if (Input.GetButtonDown("Jump") && isGrounded == true)
         {
-            Debug.Log("Naar rechts");
-            rb2d.velocity = new Vector2(walkSpeed, 0);
+            StartCoroutine(JumpCoroutine());
         }
-        else if (buttonPressed == LEFT)
+    }
+    IEnumerator JumpCoroutine()
+    {
+        isJumping = true;
+        jumpTimeCounter = jumpTime;
+
+        Rigidbody2D _rb = gameObject.GetComponent<Rigidbody2D>();
+        while (Input.GetButton("Jump"))
         {
-            Debug.Log("Naar links");
-            rb2d.velocity = new Vector2(-walkSpeed, 0);
+            if(jumpTimeCounter > 0)
+            {
+                _rb.velocity = new Vector2(_rb.velocity.x, jumpForce);
+                jumpTimeCounter -= Time.deltaTime;
+            }
+            yield return null;
         }
-        else
-        {
-            rb2d.velocity = new Vector2(0, 0);
-        }
+        isJumping = false;
     }
 }
