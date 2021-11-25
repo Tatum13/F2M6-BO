@@ -9,6 +9,11 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField]
     private float jumpForce = 10f;
 
+    [SerializeField]
+    private float dashSpeed = 3f;
+    private float dashTime;
+    private float startDashTime;
+
     private float jumpTimeCounter;
     [SerializeField]
     private float jumpTime;
@@ -16,9 +21,19 @@ public class PlayerMovement : MonoBehaviour
     public bool isGrounded = false;
     private bool isJumping = false;
 
+    private void Start()
+    {
+        dashTime = startDashTime;
+    }
+
     private void Update()
     {
         Jump();
+
+        if (Input.GetKeyDown(KeyCode.LeftShift))
+        {
+            Dash();
+        }
 
         Vector3 movement = new Vector3(Input.GetAxis("Horizontal"), 0f, 0f);
         transform.position += movement * Time.deltaTime * walkSpeed;//< ^ Lopen
@@ -47,5 +62,10 @@ public class PlayerMovement : MonoBehaviour
             yield return null;
         }
         isJumping = false;
+    }
+
+    private void Dash()
+    {
+        Debug.Log("Dash");
     }
 }
