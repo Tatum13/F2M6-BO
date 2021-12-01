@@ -6,17 +6,28 @@ public class PlayerMovement : MonoBehaviour
 {
     Rigidbody2D rb2d;
 
+    [Header ("ATTRIBUTES")]
     [SerializeField]
     private float walkSpeed = 1f;
     [SerializeField]
     private float jumpForce = 10f;
-
-    private float jumpTimeCounter;
+    [SerializeField]
+    private float dashDistance = 15f;
     [SerializeField]
     private float jumpTime;
+    private float jumpTimeCounter;
+    private float doubbleTapTime;
 
+    [Header("BOOLS")]
     public bool isGrounded = false;
+    [SerializeField]
     private bool isJumping = false;
+    [SerializeField]
+    private bool isDashing = false;
+
+    [Header("Unity stuff")]
+    KeyCode lastKeyCode;
+
 
     private void Start()
     {
@@ -25,8 +36,9 @@ public class PlayerMovement : MonoBehaviour
 
     private void Update()
     {
-        Jump();
         Walk();
+        Dash();
+        Jump();
     }
     private void Walk()
     {
@@ -49,6 +61,31 @@ public class PlayerMovement : MonoBehaviour
         {
             rb2d.AddForce(-Vector2.right * walkSpeed);
             Debug.Log("links");
+        }
+    }
+    private void Dash()
+    {
+        if (Input.GetKeyDown(KeyCode.A))//naar links dashen
+        {
+            if (doubbleTapTime > Time.time && lastKeyCode == KeyCode.A)
+            {
+                //Dash
+            }
+            else
+            {
+                doubbleTapTime = Time.time + 0.5f;
+            }
+        }
+        if (Input.GetKeyDown(KeyCode.A))//naar rechts dashen
+        {
+            if (doubbleTapTime > Time.time && lastKeyCode == KeyCode.D)
+            {
+                //Dash
+            }
+            else
+            {
+                doubbleTapTime = Time.time + 0.5f;
+            }
         }
     }
     private void Jump()
