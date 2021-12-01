@@ -4,15 +4,12 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
+    Rigidbody2D rb2d;
+
     [SerializeField]
     private float walkSpeed = 1f;
     [SerializeField]
     private float jumpForce = 10f;
-
-    [SerializeField]
-    private float dashSpeed = 3f;
-    private float dashTime;
-    private float startDashTime;
 
     private float jumpTimeCounter;
     [SerializeField]
@@ -23,22 +20,37 @@ public class PlayerMovement : MonoBehaviour
 
     private void Start()
     {
-        dashTime = startDashTime;
+        rb2d = gameObject.GetComponent<Rigidbody2D>();
     }
 
     private void Update()
     {
         Jump();
-
-        if (Input.GetKeyDown(KeyCode.LeftShift))
-        {
-            Dash();
-        }
-
-        Vector3 movement = new Vector3(Input.GetAxis("Horizontal"), 0f, 0f);
-        transform.position += movement * Time.deltaTime * walkSpeed;//< ^ Lopen
+        Walk();
     }
-
+    private void Walk()
+    {
+        if (Input.GetKey(KeyCode.D) && isGrounded == true)
+        {
+            rb2d.AddForce(Vector2.right * walkSpeed);
+            Debug.Log("rechts");
+        }
+        if (Input.GetKey(KeyCode.A) && isGrounded == true)
+        {
+            rb2d.AddForce(-Vector2.right * walkSpeed);
+            Debug.Log("links");
+        }
+        if (Input.GetKey(KeyCode.D))
+        {
+            rb2d.AddForce(Vector2.right * walkSpeed);
+            Debug.Log("rechts");
+        }
+        if (Input.GetKey(KeyCode.A))
+        {
+            rb2d.AddForce(-Vector2.right * walkSpeed);
+            Debug.Log("links");
+        }
+    }
     private void Jump()
     {
         if (Input.GetButtonDown("Jump") && isGrounded == true)
@@ -62,10 +74,5 @@ public class PlayerMovement : MonoBehaviour
             yield return null;
         }
         isJumping = false;
-    }
-
-    private void Dash()
-    {
-        Debug.Log("Dash");
     }
 }
