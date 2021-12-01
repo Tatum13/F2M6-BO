@@ -41,9 +41,10 @@ public class PlayerMovement : MonoBehaviour
 
     private void Jump()
     {
-        if (Input.GetButtonDown("Jump") && isGrounded == true)
+        if (Input.GetKeyDown(KeyCode.Z) && isGrounded == true)
         {
             StartCoroutine(JumpCoroutine());
+            Debug.Log("Jump");
         }
     }
     IEnumerator JumpCoroutine()
@@ -52,7 +53,7 @@ public class PlayerMovement : MonoBehaviour
         jumpTimeCounter = jumpTime;
 
         Rigidbody2D _rb = gameObject.GetComponent<Rigidbody2D>();
-        while (Input.GetButton("Jump"))
+        while (Input.GetKey(KeyCode.Z))
         {
             if(jumpTimeCounter > 0)
             {
