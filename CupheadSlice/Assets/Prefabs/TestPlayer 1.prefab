@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2643540751128636802}
   - component: {fileID: 2643540751128636801}
-  - component: {fileID: 2643540751128636800}
+  - component: {fileID: 1454351835770957950}
   m_Layer: 0
   m_Name: GroundChecker
   m_TagString: Untagged
@@ -58,7 +58,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 3.1897206, y: 0.23972178}
   m_EdgeRadius: 0
---- !u!114 &2643540751128636800
+--- !u!114 &1454351835770957950
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -67,7 +67,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2643540751128636803}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c9fe5c8125f46474ab4cdd0c2deadb77, type: 3}
+  m_Script: {fileID: 11500000, guid: 85ba2ab2cab331a478c45724c99fd3c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   pm: {fileID: 2643540752330240228}
@@ -175,7 +175,7 @@ MonoBehaviour:
   jumpForce: 10
   dashDistance: 15
   jumpTime: 0.2
-  isGrounded: 0
+  isGrounded: 1
   isJumping: 0
   isDashing: 0
 --- !u!50 &2643540752330240235
