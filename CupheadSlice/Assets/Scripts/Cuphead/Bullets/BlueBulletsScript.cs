@@ -17,6 +17,13 @@ public class BlueBulletsScript : MonoBehaviour
     void FixedUpdate()
     {
         rb.AddForce(new Vector2(40, 0));
+        if (Input.GetKeyDown(KeyCode.X))
+        {
+            if (Input.GetKey(KeyCode.UpArrow))
+            {
+                rb.AddForce(new Vector2(0, 40));
+            }
+        }
     }
 
     private void Update()
