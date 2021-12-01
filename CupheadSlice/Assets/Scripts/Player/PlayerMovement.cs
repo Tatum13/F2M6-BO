@@ -37,7 +37,7 @@ public class PlayerMovement : MonoBehaviour
     private void Update()
     {
         Walk();
-        Dash();
+        Dash1();
         Jump();
     }
     private void Walk()
@@ -63,29 +63,31 @@ public class PlayerMovement : MonoBehaviour
             Debug.Log("links");
         }
     }
-    private void Dash()
+    private void Dash1()
     {
         if (Input.GetKeyDown(KeyCode.A))//naar links dashen
         {
             if (doubbleTapTime > Time.time && lastKeyCode == KeyCode.A)
             {
-                //Dash
+                StartCoroutine(Dash2(-1f));
             }
             else
             {
                 doubbleTapTime = Time.time + 0.5f;
             }
+            lastKeyCode = KeyCode.A;
         }
-        if (Input.GetKeyDown(KeyCode.A))//naar rechts dashen
+        if (Input.GetKeyDown(KeyCode.D))//naar rechts dashen
         {
             if (doubbleTapTime > Time.time && lastKeyCode == KeyCode.D)
             {
-                //Dash
+                StartCoroutine(Dash2(1f));
             }
             else
             {
-                doubbleTapTime = Time.time + 0.5f;
+                doubbleTapTime = Time.time + 0.4f;
             }
+            lastKeyCode = KeyCode.D;
         }
     }
     private void Jump()
@@ -111,5 +113,16 @@ public class PlayerMovement : MonoBehaviour
             yield return null;
         }
         isJumping = false;
+    }
+    IEnumerator Dash2(float diraction)
+    {
+        isDashing = true;
+        rb2d.velocity = new Vector2(rb2d.velocity.x, 0f);
+        rb2d.AddForce(new Vector2(dashDistance * diraction, 0f), ForceMode2D.Impulse);
+        float gravity = rb2d.gravityScale;
+        rb2d.gravityScale = 0;
+        yield return new WaitForSeconds(0.4f);
+        isDashing = false;
+        rb2d.gravityScale = gravity;
     }
 }
