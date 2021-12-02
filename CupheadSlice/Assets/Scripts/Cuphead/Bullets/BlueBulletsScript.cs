@@ -17,23 +17,11 @@ public class BlueBulletsScript : MonoBehaviour
     void FixedUpdate()
     {
         rb.AddForce(new Vector2(40, 0));
-        if (Input.GetKeyDown(KeyCode.X))
-        {
-            if (Input.GetKey(KeyCode.UpArrow))
-            {
-                rb.AddForce(new Vector2(0, 40));
-            }
-        }
-    }
-
-    private void Update()
-    {
-
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if(collision.gameObject.tag == "BossCarrot")
+        if(collision.gameObject.tag == "BossCarrot")//Doet damage aan enemy met tag BossCarrot.
         {
             collision.gameObject.GetComponent<CarrotHealthScript>().carrotHealth -= bulletBlueDamage;
             Destroy(gameObject);
