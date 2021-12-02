@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Ground
   - BossCarrot
+  - Wall
   layers:
   - Default
   - TransparentFX

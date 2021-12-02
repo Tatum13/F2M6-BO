@@ -7,16 +7,11 @@ public class BlueBulletsScript : MonoBehaviour
     public float bulletBlueSpeed = 10f;
     public float bulletBlueDamage = 10f;
 
-    Rigidbody2D rb;
+    public Rigidbody2D rb;
 
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-    }
-
-    void FixedUpdate()
-    {
-        rb.AddForce(new Vector2(40, 0));
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -24,6 +19,11 @@ public class BlueBulletsScript : MonoBehaviour
         if(collision.gameObject.tag == "BossCarrot")//Doet damage aan enemy met tag BossCarrot.
         {
             collision.gameObject.GetComponent<CarrotHealthScript>().carrotHealth -= bulletBlueDamage;
+            Destroy(gameObject);
+        }
+
+        if(collision.gameObject.tag == "Wall")
+        {
             Destroy(gameObject);
         }
     }
