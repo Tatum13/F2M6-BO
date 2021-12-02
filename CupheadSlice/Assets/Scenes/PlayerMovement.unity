@@ -322,6 +322,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2643540752330240228, guid: 5bf0823ec4ef50a4c9c4611ad142220a, type: 3}
+      propertyPath: walkSpeed
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2643540752330240228, guid: 5bf0823ec4ef50a4c9c4611ad142220a, type: 3}
+      propertyPath: dashDistance
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 2643540752330240229, guid: 5bf0823ec4ef50a4c9c4611ad142220a, type: 3}
       propertyPath: m_RootOrder
       value: 1

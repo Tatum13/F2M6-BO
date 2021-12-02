@@ -37,57 +37,68 @@ public class PlayerMovement : MonoBehaviour
     private void Update()
     {
         Walk();
-        Dash1();
         Jump();
     }
     private void Walk()
     {
-        if (Input.GetKey(KeyCode.D) && isGrounded == true)
+        if(!isDashing)
         {
-            rb2d.AddForce(Vector2.right * walkSpeed);
-            Debug.Log("rechts");
+            Vector2 movement = Vector2.zero;
+            if (Input.GetKey(KeyCode.RightArrow) && isGrounded == true)
+            {
+                movement += Vector2.right * walkSpeed;
+                Debug.Log("rechts");
+            }
+            if (Input.GetKey(KeyCode.LeftArrow) && isGrounded == true)
+            {
+                movement += Vector2.left * walkSpeed;
+               Debug.Log("links");
+            }
+            if (Input.GetKey(KeyCode.RightArrow))
+            {
+               movement += Vector2.right * walkSpeed;
+             Debug.Log("rechts");
+            }
+            if (Input.GetKey(KeyCode.LeftArrow))
+            {
+                movement += Vector2.left * walkSpeed;
+                Debug.Log("links");
+            }
+            rb2d.velocity = new Vector2(movement.x, rb2d.velocity.y);
         }
-        if (Input.GetKey(KeyCode.A) && isGrounded == true)
+        else
         {
-            rb2d.AddForce(-Vector2.right * walkSpeed);
-            Debug.Log("links");
-        }
-        if (Input.GetKey(KeyCode.D))
-        {
-            rb2d.AddForce(Vector2.right * walkSpeed);
-            Debug.Log("rechts");
-        }
-        if (Input.GetKey(KeyCode.A))
-        {
-            rb2d.AddForce(-Vector2.right * walkSpeed);
-            Debug.Log("links");
+            isDashing = true;
         }
     }
     private void Dash1()
     {
-        if (Input.GetKeyDown(KeyCode.A))//naar links dashen
+        if (isDashing)
         {
-            if (doubbleTapTime > Time.time && lastKeyCode == KeyCode.A)
+            if (Input.GetKeyDown(KeyCode.LeftArrow))//naar links dashen
             {
-                StartCoroutine(Dash2(-1f));
+                if (doubbleTapTime > Time.time && lastKeyCode == KeyCode.LeftArrow)
+                {
+                    StartCoroutine(Dash2(-1f));
+                }
+                else
+                {
+                    doubbleTapTime = Time.time + 0.5f;
+                }
+                lastKeyCode = KeyCode.LeftArrow;
             }
-            else
+            if (Input.GetKeyDown(KeyCode.RightArrow))//naar rechts dashen
             {
-                doubbleTapTime = Time.time + 0.5f;
+                if (doubbleTapTime > Time.time && lastKeyCode == KeyCode.RightArrow)
+                {
+                    StartCoroutine(Dash2(1f));
+                }
+                else
+                {
+                    doubbleTapTime = Time.time + 0.5f;
+                }
+                lastKeyCode = KeyCode.RightArrow;
             }
-            lastKeyCode = KeyCode.A;
-        }
-        if (Input.GetKeyDown(KeyCode.D))//naar rechts dashen
-        {
-            if (doubbleTapTime > Time.time && lastKeyCode == KeyCode.D)
-            {
-                StartCoroutine(Dash2(1f));
-            }
-            else
-            {
-                doubbleTapTime = Time.time + 0.4f;
-            }
-            lastKeyCode = KeyCode.D;
         }
     }
     private void Jump()
@@ -114,15 +125,26 @@ public class PlayerMovement : MonoBehaviour
         }
         isJumping = false;
     }
-    IEnumerator Dash2(float diraction)
+    IEnumerator Dash2(float direction)
     {
-        isDashing = true;
-        rb2d.velocity = new Vector2(rb2d.velocity.x, 0f);
-        rb2d.AddForce(new Vector2(dashDistance * diraction, 0f), ForceMode2D.Impulse);
-        float gravity = rb2d.gravityScale;
-        rb2d.gravityScale = 0;
-        yield return new WaitForSeconds(0.4f);
+        
+        if (!isDashing)
+        {
+            isDashing = true;
+            Vector2 movement = Vector2.zero;
+            rb2d.velocity = new Vector2(rb2d.velocity.x, 0f);
+
+            /*rb2d.AddForce(new Vector2(dashDistance * direction, 0f), ForceMode2D.Impulse);*/
+            movement += new Vector2(dashDistance * direction, 0f);
+
+            float gravity = rb2d.gravityScale;
+            rb2d.gravityScale = 0;
+            yield return new WaitForSeconds(0.3f);
+
+            
+            rb2d.gravityScale = gravity;
+        }
         isDashing = false;
-        rb2d.gravityScale = gravity;
+
     }
 }
