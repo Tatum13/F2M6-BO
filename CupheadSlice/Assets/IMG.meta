@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
+guid: 57e2a38c56844f64c94fc774a37af85c
+=======
 guid: 1d858ae1ebe838c45a56b8c1b70afa2e
+>>>>>>> origin/Patricia
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}
