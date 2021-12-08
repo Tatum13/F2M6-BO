@@ -22,89 +22,35 @@ public class PlayerShootScript : MonoBehaviour
     private void Start()
     {
         shootTimer = reloadTimer;
+
+        //GameObject bullet = Instantiate(blueBulletPrefab) as GameObject;
+        //Physics2D.IgnoreCollision(bullet.GetComponent<Collider2D>(), GetComponent<Collider2D>());
     }
     void Update()
     {
+        //Debug.Log(new Vector2 (Input.GetAxis("Horizontal"), Input.GetAxis("Vertical")).magnitude);
         if (Input.GetKey(KeyCode.X))
         {
             shootTimer += Time.deltaTime; // Start de timer.
             if (shootTimer > reloadTimer)
             {
-                //Shoot(new Vector2 (1000, 0));
-                //shootTimer = 0.0f;
-
-                if (Input.GetKey(KeyCode.LeftArrow))//Schiet naar links.
+                Vector2 firePointPosition = new Vector2(transform.position.x + Input.GetAxis("Horizontal") * 2, transform.position.y + Input.GetAxis("Vertical") * 2);
+                firePoint.position = firePointPosition;
+                Vector2 shootDirection = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical")) * blueBulletForce;
+                if (Input.GetAxis("Vertical") >= 0 && Mathf.Abs(shootDirection.magnitude) > 0)
                 {
-                    activeFirePoint = firePoint3;
-                    Shoot3(new Vector2(-1000, 0));
-                    shootTimer = 0.0f;
+                    Shoot(shootDirection);
                 }
-                if(Input.GetKey(KeyCode.LeftArrow) && Input.GetKey(KeyCode.UpArrow))//Schiet links schuin naar boven.
-                {
-                    activeFirePoint = firePoint4;
-                    Shoot4(new Vector2(-1000, 1000));
-                    shootTimer = 0.0f;
-                }
-                if (Input.GetKey(KeyCode.RightArrow))//Schiet naar rechts.
-                {
-                    activeFirePoint = firePoint;//Naar rechts
-                    Shoot(new Vector2 (1000, 0));
-                    shootTimer = 0.0f;
-                }
-                if(Input.GetKey(KeyCode.RightArrow) && Input.GetKey(KeyCode.UpArrow))//Schiet rechts schuin naar boven.
-                { 
-                    Shoot5(new Vector2(1000, 1000));
-                    shootTimer = 0.0f;
-                }
-                if (Input.GetKey(KeyCode.UpArrow))
-                {
-                    activeFirePoint = firePoint2; //Naar boven.
-                    Shoot2(new Vector2(0, 1000));
-                    shootTimer = 0.0f;
-                }
+                shootTimer = 0.0f;
             }
         }
-
-
     }
 
     void Shoot(Vector2 direction)//Maakt de bullet aan en schiet maar rechts.
     {
         GameObject blueBullet = Instantiate(blueBulletPrefab, firePoint.position, firePoint.rotation);
+        //Physics2D.IgnoreCollision(blueBullet.GetComponent<Collider2D>(), GetComponent<Collider2D>());
         Rigidbody2D rb = blueBullet.GetComponent<Rigidbody2D>();
         rb.AddForce(direction);
     }
-
-    void Shoot2(Vector2 direction)//Naar boven.
-    {
-        GameObject blueBullet = Instantiate(blueBulletPrefab, firePoint2.position, firePoint2.rotation);
-        Rigidbody2D rb = blueBullet.GetComponent<Rigidbody2D>();
-        rb.AddForce(direction);
-    }
-
-    void Shoot3(Vector2 direction)//Naar Links.
-    {
-        GameObject blueBullet = Instantiate(blueBulletPrefab, firePoint3.position, firePoint3.rotation);
-        Rigidbody2D rb = blueBullet.GetComponent<Rigidbody2D>();
-        rb.AddForce(direction);
-    }
-
-    void Shoot4(Vector2 direction)//Naar Links schuin naar boven.
-    {
-        GameObject blueBullet = Instantiate(blueBulletPrefab, firePoint4.position, firePoint4.rotation);
-        Rigidbody2D rb = blueBullet.GetComponent<Rigidbody2D>();
-        rb.AddForce(direction);
-    }
-
-    void Shoot5(Vector2 direction)//Naar rechts schuin naar boven.
-    {
-        GameObject blueBullet = Instantiate(blueBulletPrefab, firePoint5.position, firePoint5.rotation);
-        Rigidbody2D rb = blueBullet.GetComponent<Rigidbody2D>();
-        rb.AddForce(direction);
-    }
-
-
-
-
-
 }

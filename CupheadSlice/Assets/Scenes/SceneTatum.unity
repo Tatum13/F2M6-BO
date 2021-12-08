@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 159776921}
   m_Layer: 0
   m_Name: green
-  m_TagString: Untagged
+  m_TagString: Sky
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -327,7 +327,7 @@ GameObject:
   - component: {fileID: 280193645}
   m_Layer: 0
   m_Name: Road
-  m_TagString: Ground
+  m_TagString: Voorgrond
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -628,7 +628,7 @@ GameObject:
   - component: {fileID: 649809098}
   m_Layer: 0
   m_Name: Floor
-  m_TagString: Untagged
+  m_TagString: Road
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -847,7 +847,7 @@ GameObject:
   - component: {fileID: 1697813521}
   m_Layer: 0
   m_Name: Background
-  m_TagString: Untagged
+  m_TagString: Sky
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -979,6 +979,10 @@ PrefabInstance:
     - target: {fileID: 2643540752330240231, guid: 5bf0823ec4ef50a4c9c4611ad142220a, type: 3}
       propertyPath: m_Name
       value: TestPlayer
+      objectReference: {fileID: 0}
+    - target: {fileID: 5477969235228899241, guid: 5bf0823ec4ef50a4c9c4611ad142220a, type: 3}
+      propertyPath: blueBulletForce
+      value: 1000
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5bf0823ec4ef50a4c9c4611ad142220a, type: 3}

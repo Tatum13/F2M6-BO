@@ -26,6 +26,14 @@ public class BlueBulletsScript : MonoBehaviour
         {
             Destroy(gameObject);
         }
+
+        if(collision.gameObject.tag == "Player" && collision.gameObject.tag == "Sky")
+        {
+
+        }
+
+
+
     }
 
     private void OnBecameInvisible()// Zodra de bullet uit het scherm is dan word die vernietigd.
