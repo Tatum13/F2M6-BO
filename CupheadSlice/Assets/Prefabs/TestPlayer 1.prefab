@@ -173,7 +173,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkSpeed: 0.5
   jumpForce: 10
-  dashDistance: 15
+  dashDistance: 3
   jumpTime: 0.2
   isGrounded: 1
   isJumping: 0
