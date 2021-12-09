@@ -219,7 +219,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parallaxEffectMultiplier: 0.02
-  player: {fileID: 0}
+  player: {fileID: 2643540752065256768}
 --- !u!1001 &98598690
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -373,7 +373,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parallaxEffectMultiplier: 0.05
-  player: {fileID: 0}
+  player: {fileID: 2643540752065256768}
 --- !u!1 &157904745
 GameObject:
   m_ObjectHideFlags: 0
@@ -1031,7 +1031,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parallaxEffectMultiplier: 0.015
-  player: {fileID: 0}
+  player: {fileID: 2643540752065256768}
 --- !u!1 &508334649
 GameObject:
   m_ObjectHideFlags: 0
@@ -1210,7 +1210,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parallaxEffectMultiplier: 0.03
-  player: {fileID: 0}
+  player: {fileID: 2643540752065256768}
 --- !u!1 &554605210
 GameObject:
   m_ObjectHideFlags: 0
@@ -1380,7 +1380,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parallaxEffectMultiplier: 0.033
-  player: {fileID: 0}
+  player: {fileID: 2643540752065256768}
 --- !u!114 &564441230
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2497,63 +2497,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 882576571}
   m_CullTransparentMesh: 1
---- !u!1001 &938995111
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 2643540752330240229, guid: 5bf0823ec4ef50a4c9c4611ad142220a, type: 3}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2643540752330240229, guid: 5bf0823ec4ef50a4c9c4611ad142220a, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -6.4156685
-      objectReference: {fileID: 0}
-    - target: {fileID: 2643540752330240229, guid: 5bf0823ec4ef50a4c9c4611ad142220a, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -1.13
-      objectReference: {fileID: 0}
-    - target: {fileID: 2643540752330240229, guid: 5bf0823ec4ef50a4c9c4611ad142220a, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2643540752330240229, guid: 5bf0823ec4ef50a4c9c4611ad142220a, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2643540752330240229, guid: 5bf0823ec4ef50a4c9c4611ad142220a, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2643540752330240229, guid: 5bf0823ec4ef50a4c9c4611ad142220a, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2643540752330240229, guid: 5bf0823ec4ef50a4c9c4611ad142220a, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2643540752330240229, guid: 5bf0823ec4ef50a4c9c4611ad142220a, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2643540752330240229, guid: 5bf0823ec4ef50a4c9c4611ad142220a, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2643540752330240229, guid: 5bf0823ec4ef50a4c9c4611ad142220a, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2643540752330240231, guid: 5bf0823ec4ef50a4c9c4611ad142220a, type: 3}
-      propertyPath: m_Name
-      value: TestPlayer 1
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 5bf0823ec4ef50a4c9c4611ad142220a, type: 3}
 --- !u!1 &1013212494
 GameObject:
   m_ObjectHideFlags: 0
@@ -2599,7 +2542,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parallaxEffectMultiplier: 0.05
-  player: {fileID: 0}
+  player: {fileID: 2643540752065256768}
 --- !u!212 &1013212497
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3455,7 +3398,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parallaxEffectMultiplier: 0.04
-  player: {fileID: 0}
+  player: {fileID: 2643540752065256768}
 --- !u!1 &1214360691
 GameObject:
   m_ObjectHideFlags: 0
@@ -4075,7 +4018,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parallaxEffectMultiplier: 0.025
-  player: {fileID: 0}
+  player: {fileID: 2643540752065256768}
 --- !u!1 &1419351004
 GameObject:
   m_ObjectHideFlags: 0
@@ -4250,7 +4193,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parallaxEffectMultiplier: 0.01
-  player: {fileID: 0}
+  player: {fileID: 2643540752065256768}
 --- !u!1 &1545661009
 GameObject:
   m_ObjectHideFlags: 0
@@ -4837,7 +4780,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parallaxEffectMultiplier: 0.035
-  player: {fileID: 0}
+  player: {fileID: 2643540752065256768}
 --- !u!1 &1944083582
 GameObject:
   m_ObjectHideFlags: 0
@@ -5055,7 +4998,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parallaxEffectMultiplier: 0.005
-  player: {fileID: 0}
+  player: {fileID: 2643540752065256768}
 --- !u!1 &2096809450
 GameObject:
   m_ObjectHideFlags: 0
@@ -5247,4 +5190,66 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parallaxEffectMultiplier: 0.045
-  player: {fileID: 0}
+  player: {fileID: 2643540752065256768}
+--- !u!1 &2643540752065256768 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6267984033072154888, guid: 431bf2e5e33d9da4e956af56ebe50ea7, type: 3}
+  m_PrefabInstance: {fileID: 8238178875008898120}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8238178875008898120
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 6267984033072154888, guid: 431bf2e5e33d9da4e956af56ebe50ea7, type: 3}
+      propertyPath: m_Name
+      value: Cuphead
+      objectReference: {fileID: 0}
+    - target: {fileID: 6267984033072154890, guid: 431bf2e5e33d9da4e956af56ebe50ea7, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6267984033072154890, guid: 431bf2e5e33d9da4e956af56ebe50ea7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6267984033072154890, guid: 431bf2e5e33d9da4e956af56ebe50ea7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.13
+      objectReference: {fileID: 0}
+    - target: {fileID: 6267984033072154890, guid: 431bf2e5e33d9da4e956af56ebe50ea7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6267984033072154890, guid: 431bf2e5e33d9da4e956af56ebe50ea7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6267984033072154890, guid: 431bf2e5e33d9da4e956af56ebe50ea7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6267984033072154890, guid: 431bf2e5e33d9da4e956af56ebe50ea7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6267984033072154890, guid: 431bf2e5e33d9da4e956af56ebe50ea7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6267984033072154890, guid: 431bf2e5e33d9da4e956af56ebe50ea7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6267984033072154890, guid: 431bf2e5e33d9da4e956af56ebe50ea7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6267984033072154890, guid: 431bf2e5e33d9da4e956af56ebe50ea7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 431bf2e5e33d9da4e956af56ebe50ea7, type: 3}
