@@ -243,8 +243,11 @@ GameObject:
   - component: {fileID: 1053010340}
   - component: {fileID: 1053010339}
   - component: {fileID: 1053010338}
+<<<<<<< HEAD
   - component: {fileID: 1053010342}
   - component: {fileID: 1053010341}
+=======
+>>>>>>> origin/Patricia
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -269,7 +272,11 @@ Camera:
   m_GameObject: {fileID: 1053010337}
   m_Enabled: 1
   serializedVersion: 2
+<<<<<<< HEAD
   m_ClearFlags: 2
+=======
+  m_ClearFlags: 1
+>>>>>>> origin/Patricia
   m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
@@ -317,6 +324,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< HEAD
 --- !u!212 &1053010341
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -387,6 +395,8 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+=======
+>>>>>>> origin/Patricia
 --- !u!1001 &1097691652
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -394,6 +404,7 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+<<<<<<< HEAD
     - target: {fileID: 2643540752330240228, guid: 5bf0823ec4ef50a4c9c4611ad142220a, type: 3}
       propertyPath: walkSpeed
       value: 2
@@ -402,17 +413,27 @@ PrefabInstance:
       propertyPath: dashDistance
       value: 100
       objectReference: {fileID: 0}
+=======
+>>>>>>> origin/Patricia
     - target: {fileID: 2643540752330240229, guid: 5bf0823ec4ef50a4c9c4611ad142220a, type: 3}
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2643540752330240229, guid: 5bf0823ec4ef50a4c9c4611ad142220a, type: 3}
       propertyPath: m_LocalPosition.x
+<<<<<<< HEAD
       value: -4.14
       objectReference: {fileID: 0}
     - target: {fileID: 2643540752330240229, guid: 5bf0823ec4ef50a4c9c4611ad142220a, type: 3}
       propertyPath: m_LocalPosition.y
       value: -2
+=======
+      value: -4.09
+      objectReference: {fileID: 0}
+    - target: {fileID: 2643540752330240229, guid: 5bf0823ec4ef50a4c9c4611ad142220a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.27
+>>>>>>> origin/Patricia
       objectReference: {fileID: 0}
     - target: {fileID: 2643540752330240229, guid: 5bf0823ec4ef50a4c9c4611ad142220a, type: 3}
       propertyPath: m_LocalPosition.z
@@ -452,6 +473,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5bf0823ec4ef50a4c9c4611ad142220a, type: 3}
+<<<<<<< HEAD
 --- !u!1 &1132710480
 GameObject:
   m_ObjectHideFlags: 0
@@ -554,6 +576,8 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+=======
+>>>>>>> origin/Patricia
 --- !u!1 &1338926143
 GameObject:
   m_ObjectHideFlags: 0

@@ -41,9 +41,4 @@ public class PlayerShootScript : MonoBehaviour
             rb.AddForce(firePoint.up * blueBulletForce, ForceMode2D.Impulse);
         }
     }
-
-
-
-
-
 }

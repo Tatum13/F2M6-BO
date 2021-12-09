@@ -56,12 +56,12 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKey(KeyCode.LeftArrow) && isGrounded == true)
         {
             movement += Vector2.left * walkSpeed;
-           Debug.Log("links");
+            Debug.Log("links");
         }
         if (Input.GetKey(KeyCode.RightArrow))
         {
-           movement += Vector2.right * walkSpeed;
-         Debug.Log("rechts");
+            movement += Vector2.right * walkSpeed;
+            Debug.Log("rechts");
         }
         if (Input.GetKey(KeyCode.LeftArrow))
         {
@@ -113,7 +113,7 @@ public class PlayerMovement : MonoBehaviour
         Rigidbody2D _rb = gameObject.GetComponent<Rigidbody2D>();
         while (Input.GetButton("Jump"))
         {
-            if(jumpTimeCounter > 0)
+            if (jumpTimeCounter > 0)
             {
                 _rb.velocity = new Vector2(_rb.velocity.x, jumpForce);
                 jumpTimeCounter -= Time.deltaTime;
