@@ -1,0 +1,720 @@
+fileFormatVersion: 2
+guid: 5b703299ab70fc24194376fe1ba31afe
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8461920655152824207
+    second: wortel_intro_spritesheet_copy (1)_0
+  - first:
+      213: -8537667372855372940
+    second: wortel_intro_spritesheet_copy (1)_1
+  - first:
+      213: -3954366435940811367
+    second: wortel_intro_spritesheet_copy (1)_2
+  - first:
+      213: -7609645059199205524
+    second: wortel_intro_spritesheet_copy (1)_3
+  - first:
+      213: 3135169276839914717
+    second: wortel_intro_spritesheet_copy (1)_4
+  - first:
+      213: 2383351765795318455
+    second: wortel_intro_spritesheet_copy (1)_5
+  - first:
+      213: -7397467148823935501
+    second: wortel_intro_spritesheet_copy (1)_6
+  - first:
+      213: -5981678671939052975
+    second: wortel_intro_spritesheet_copy (1)_7
+  - first:
+      213: -4440695833514172567
+    second: wortel_intro_spritesheet_copy (1)_8
+  - first:
+      213: 2141817114498116586
+    second: wortel_intro_spritesheet_copy (1)_9
+  - first:
+      213: 8862052657643944107
+    second: wortel_intro_spritesheet_copy (1)_10
+  - first:
+      213: 5978964227964344924
+    second: wortel_intro_spritesheet_copy (1)_11
+  - first:
+      213: 5187406549879894986
+    second: wortel_intro_spritesheet_copy (1)_12
+  - first:
+      213: 5348040020640618089
+    second: wortel_intro_spritesheet_copy (1)_13
+  - first:
+      213: -1702276491490371212
+    second: wortel_intro_spritesheet_copy (1)_14
+  - first:
+      213: 4549156558652686972
+    second: wortel_intro_spritesheet_copy (1)_15
+  - first:
+      213: 3191038311633245516
+    second: wortel_intro_spritesheet_copy (1)_16
+  - first:
+      213: -8644106549073908019
+    second: wortel_intro_spritesheet_copy (1)_17
+  - first:
+      213: -1789108546421937852
+    second: wortel_intro_spritesheet_copy (1)_18
+  - first:
+      213: 3650573360258254574
+    second: wortel_intro_spritesheet_copy (1)_19
+  - first:
+      213: -6446414225356536534
+    second: wortel_intro_spritesheet_copy (1)_20
+  - first:
+      213: 5258301896431052667
+    second: wortel_intro_spritesheet_copy (1)_21
+  - first:
+      213: 5328876489852503419
+    second: wortel_intro_spritesheet_copy (1)_22
+  - first:
+      213: 205419419016928408
+    second: wortel_intro_spritesheet_copy (1)_23
+  - first:
+      213: -8801825310793180849
+    second: wortel_intro_spritesheet_copy (1)_24
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: wortel_intro_spritesheet_copy (1)_0
+      rect:
+        serializedVersion: 2
+        x: 887
+        y: 4010
+        width: 316
+        height: 574
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17043105ff7319a80800000000000000
+      internalID: -8461920655152824207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wortel_intro_spritesheet_copy (1)_1
+      rect:
+        serializedVersion: 2
+        x: 2057
+        y: 4022
+        width: 423
+        height: 747
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 473538642cc148980800000000000000
+      internalID: -8537667372855372940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wortel_intro_spritesheet_copy (1)_2
+      rect:
+        serializedVersion: 2
+        x: 3335
+        y: 4010
+        width: 507
+        height: 846
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99d350a7da44f19c0800000000000000
+      internalID: -3954366435940811367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wortel_intro_spritesheet_copy (1)_3
+      rect:
+        serializedVersion: 2
+        x: 4492
+        y: 4009
+        width: 588
+        height: 884
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6fff93e22c156690800000000000000
+      internalID: -7609645059199205524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wortel_intro_spritesheet_copy (1)_4
+      rect:
+        serializedVersion: 2
+        x: 5934
+        y: 4021
+        width: 630
+        height: 905
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddce2c0b8db528b20800000000000000
+      internalID: 3135169276839914717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wortel_intro_spritesheet_copy (1)_5
+      rect:
+        serializedVersion: 2
+        x: 7418
+        y: 4010
+        width: 676
+        height: 904
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7baa70fadcd531120800000000000000
+      internalID: 2383351765795318455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wortel_intro_spritesheet_copy (1)_6
+      rect:
+        serializedVersion: 2
+        x: 722
+        y: 2929
+        width: 692
+        height: 886
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f54ab452dae65990800000000000000
+      internalID: -7397467148823935501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wortel_intro_spritesheet_copy (1)_7
+      rect:
+        serializedVersion: 2
+        x: 1985
+        y: 2937
+        width: 658
+        height: 860
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15ada8ea0feccfca0800000000000000
+      internalID: -5981678671939052975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wortel_intro_spritesheet_copy (1)_8
+      rect:
+        serializedVersion: 2
+        x: 3308
+        y: 2938
+        width: 654
+        height: 824
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96f94dfcaaa7f52c0800000000000000
+      internalID: -4440695833514172567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wortel_intro_spritesheet_copy (1)_9
+      rect:
+        serializedVersion: 2
+        x: 4420
+        y: 2946
+        width: 765
+        height: 804
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aeb238b515349bd10800000000000000
+      internalID: 2141817114498116586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wortel_intro_spritesheet_copy (1)_10
+      rect:
+        serializedVersion: 2
+        x: 5837
+        y: 2941
+        width: 849
+        height: 763
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba87caf50f55cfa70800000000000000
+      internalID: 8862052657643944107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wortel_intro_spritesheet_copy (1)_11
+      rect:
+        serializedVersion: 2
+        x: 7303
+        y: 2961
+        width: 906
+        height: 669
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5a1594994c89f250800000000000000
+      internalID: 5978964227964344924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wortel_intro_spritesheet_copy (1)_12
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 2001
+        width: 905
+        height: 660
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac33027e5ce5df740800000000000000
+      internalID: 5187406549879894986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wortel_intro_spritesheet_copy (1)_13
+      rect:
+        serializedVersion: 2
+        x: 1815
+        y: 2013
+        width: 905
+        height: 624
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9665bda401e083a40800000000000000
+      internalID: 5348040020640618089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wortel_intro_spritesheet_copy (1)_14
+      rect:
+        serializedVersion: 2
+        x: 3141
+        y: 2028
+        width: 896
+        height: 656
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 479d73fcc8c4068e0800000000000000
+      internalID: -1702276491490371212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wortel_intro_spritesheet_copy (1)_15
+      rect:
+        serializedVersion: 2
+        x: 4358
+        y: 2027
+        width: 877
+        height: 659
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c72c122a9c9d12f30800000000000000
+      internalID: 4549156558652686972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wortel_intro_spritesheet_copy (1)_16
+      rect:
+        serializedVersion: 2
+        x: 5817
+        y: 2012
+        width: 866
+        height: 682
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c45df850078d84c20800000000000000
+      internalID: 3191038311633245516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wortel_intro_spritesheet_copy (1)_17
+      rect:
+        serializedVersion: 2
+        x: 7344
+        y: 2008
+        width: 836
+        height: 692
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dce62dd54e6f90880800000000000000
+      internalID: -8644106549073908019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wortel_intro_spritesheet_copy (1)_18
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 1022
+        width: 812
+        height: 695
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 449a7e1914fcb27e0800000000000000
+      internalID: -1789108546421937852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wortel_intro_spritesheet_copy (1)_19
+      rect:
+        serializedVersion: 2
+        x: 1896
+        y: 1030
+        width: 763
+        height: 721
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee682bc212179a230800000000000000
+      internalID: 3650573360258254574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wortel_intro_spritesheet_copy (1)_20
+      rect:
+        serializedVersion: 2
+        x: 3226
+        y: 1039
+        width: 755
+        height: 733
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a254996aa6cb986a0800000000000000
+      internalID: -6446414225356536534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wortel_intro_spritesheet_copy (1)_21
+      rect:
+        serializedVersion: 2
+        x: 4438
+        y: 1037
+        width: 712
+        height: 745
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b77298217bd39f840800000000000000
+      internalID: 5258301896431052667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wortel_intro_spritesheet_copy (1)_22
+      rect:
+        serializedVersion: 2
+        x: 5967
+        y: 1034
+        width: 601
+        height: 751
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b75c6951fe8f3f940800000000000000
+      internalID: 5328876489852503419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wortel_intro_spritesheet_copy (1)_23
+      rect:
+        serializedVersion: 2
+        x: 7498
+        y: 1030
+        width: 553
+        height: 753
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89c987c8fdbc9d200800000000000000
+      internalID: 205419419016928408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wortel_intro_spritesheet_copy (1)_24
+      rect:
+        serializedVersion: 2
+        x: 791
+        y: 75
+        width: 527
+        height: 745
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f49512f8382a9d580800000000000000
+      internalID: -8801825310793180849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

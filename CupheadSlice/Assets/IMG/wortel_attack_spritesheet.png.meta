@@ -1,0 +1,648 @@
+fileFormatVersion: 2
+guid: 6680135c29724f745b8b317f0a8b8a9f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -131740293711923894
+    second: wortel_attack_spritesheet_0
+  - first:
+      213: 4111550962345788219
+    second: wortel_attack_spritesheet_1
+  - first:
+      213: -8073662397253161211
+    second: wortel_attack_spritesheet_2
+  - first:
+      213: 4749832180448991486
+    second: wortel_attack_spritesheet_3
+  - first:
+      213: 611859947937491430
+    second: wortel_attack_spritesheet_4
+  - first:
+      213: -4688414859552900875
+    second: wortel_attack_spritesheet_5
+  - first:
+      213: -8055241625752767424
+    second: wortel_attack_spritesheet_6
+  - first:
+      213: 8352122283933883549
+    second: wortel_attack_spritesheet_7
+  - first:
+      213: 2636043387958874082
+    second: wortel_attack_spritesheet_8
+  - first:
+      213: -6365013383079302734
+    second: wortel_attack_spritesheet_9
+  - first:
+      213: 4326846371424951339
+    second: wortel_attack_spritesheet_10
+  - first:
+      213: 7960725910051471890
+    second: wortel_attack_spritesheet_11
+  - first:
+      213: 6715603170348535907
+    second: wortel_attack_spritesheet_12
+  - first:
+      213: 2843353049589702445
+    second: wortel_attack_spritesheet_13
+  - first:
+      213: 1550161464689785160
+    second: wortel_attack_spritesheet_14
+  - first:
+      213: 4355989744033690045
+    second: wortel_attack_spritesheet_15
+  - first:
+      213: -8030091445879552914
+    second: wortel_attack_spritesheet_16
+  - first:
+      213: -1185791298646964278
+    second: wortel_attack_spritesheet_17
+  - first:
+      213: 3044020414455700494
+    second: wortel_attack_spritesheet_18
+  - first:
+      213: -7266161814639554234
+    second: wortel_attack_spritesheet_19
+  - first:
+      213: -8622832180060641197
+    second: wortel_attack_spritesheet_20
+  - first:
+      213: -6740118118872962864
+    second: wortel_attack_spritesheet_21
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: wortel_attack_spritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 3094
+        width: 766
+        height: 1174
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a45f1be96e6fb2ef0800000000000000
+      internalID: -131740293711923894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wortel_attack_spritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 1243
+        y: 3094
+        width: 764
+        height: 1159
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b33498af0d92f0930800000000000000
+      internalID: 4111550962345788219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wortel_attack_spritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 2372
+        y: 3092
+        width: 777
+        height: 1156
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50feb4763d694ff80800000000000000
+      internalID: -8073662397253161211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wortel_attack_spritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 3482
+        y: 3094
+        width: 788
+        height: 1142
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef89162d33bcae140800000000000000
+      internalID: 4749832180448991486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wortel_attack_spritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 4671
+        y: 3092
+        width: 788
+        height: 1132
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e96a118163cd7800800000000000000
+      internalID: 611859947937491430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wortel_attack_spritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 5744
+        y: 3092
+        width: 796
+        height: 1122
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f8bfa886876feeb0800000000000000
+      internalID: -4688414859552900875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wortel_attack_spritesheet_6
+      rect:
+        serializedVersion: 2
+        x: 6764
+        y: 3092
+        width: 794
+        height: 1109
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 044f01d7b68063090800000000000000
+      internalID: -8055241625752767424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wortel_attack_spritesheet_7
+      rect:
+        serializedVersion: 2
+        x: 7814
+        y: 3092
+        width: 805
+        height: 1106
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9cd08e37f2b8e370800000000000000
+      internalID: 8352122283933883549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wortel_attack_spritesheet_8
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 1818
+        width: 793
+        height: 1100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ef4ec7be7b159420800000000000000
+      internalID: 2636043387958874082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wortel_attack_spritesheet_9
+      rect:
+        serializedVersion: 2
+        x: 1236
+        y: 1821
+        width: 801
+        height: 1101
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b963f62d0eeaa7a0800000000000000
+      internalID: -6365013383079302734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wortel_attack_spritesheet_10
+      rect:
+        serializedVersion: 2
+        x: 2360
+        y: 1818
+        width: 805
+        height: 1089
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2cd876a9db0c0c30800000000000000
+      internalID: 4326846371424951339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wortel_attack_spritesheet_11
+      rect:
+        serializedVersion: 2
+        x: 3473
+        y: 1818
+        width: 810
+        height: 1080
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 212cdd6990e2a7e60800000000000000
+      internalID: 7960725910051471890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wortel_attack_spritesheet_12
+      rect:
+        serializedVersion: 2
+        x: 4638
+        y: 1809
+        width: 793
+        height: 1089
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3609c1da08d923d50800000000000000
+      internalID: 6715603170348535907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wortel_attack_spritesheet_13
+      rect:
+        serializedVersion: 2
+        x: 5714
+        y: 1816
+        width: 782
+        height: 1084
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2f51dba88e957720800000000000000
+      internalID: 2843353049589702445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wortel_attack_spritesheet_14
+      rect:
+        serializedVersion: 2
+        x: 6762
+        y: 1813
+        width: 775
+        height: 1079
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 849755793a7438510800000000000000
+      internalID: 1550161464689785160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wortel_attack_spritesheet_15
+      rect:
+        serializedVersion: 2
+        x: 7842
+        y: 1819
+        width: 766
+        height: 1083
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db17f5ad795937c30800000000000000
+      internalID: 4355989744033690045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wortel_attack_spritesheet_16
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 463
+        width: 770
+        height: 1092
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e64427e00626f8090800000000000000
+      internalID: -8030091445879552914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wortel_attack_spritesheet_17
+      rect:
+        serializedVersion: 2
+        x: 1203
+        y: 454
+        width: 768
+        height: 1115
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac70662b8193b8fe0800000000000000
+      internalID: -1185791298646964278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wortel_attack_spritesheet_18
+      rect:
+        serializedVersion: 2
+        x: 2368
+        y: 466
+        width: 760
+        height: 1117
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0c5ba460788e3a20800000000000000
+      internalID: 3044020414455700494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wortel_attack_spritesheet_19
+      rect:
+        serializedVersion: 2
+        x: 3483
+        y: 460
+        width: 758
+        height: 1150
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 641d6edc358692b90800000000000000
+      internalID: -7266161814639554234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wortel_attack_spritesheet_20
+      rect:
+        serializedVersion: 2
+        x: 4621
+        y: 454
+        width: 759
+        height: 1166
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 358ada561db855880800000000000000
+      internalID: -8622832180060641197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wortel_attack_spritesheet_21
+      rect:
+        serializedVersion: 2
+        x: 5660
+        y: 454
+        width: 793
+        height: 1219
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d82764184a4672a0800000000000000
+      internalID: -6740118118872962864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
