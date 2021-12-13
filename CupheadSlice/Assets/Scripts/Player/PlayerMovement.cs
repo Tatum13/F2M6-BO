@@ -36,57 +36,35 @@ public class PlayerMovement : MonoBehaviour
 
     private void Update()
     {
-        Walk();
-        Dash();
+        WOrD();
         Jump();
+        Dash1();
+    }
+    private void WOrD()
+    {
+        if (!isDashing)
+            Walk();
     }
     private void Walk()
     {
-        if (Input.GetKey(KeyCode.D) && isGrounded == true)
+        Vector2 movement = Vector2.zero;
+        if (Input.GetKey(KeyCode.RightArrow) && isGrounded == true)
         {
-            rb2d.AddForce(Vector2.right * walkSpeed);
-            Debug.Log("rechts");
+            movement += Vector2.right * walkSpeed;
         }
-        if (Input.GetKey(KeyCode.A) && isGrounded == true)
+        if (Input.GetKey(KeyCode.LeftArrow) && isGrounded == true)
         {
-            rb2d.AddForce(-Vector2.right * walkSpeed);
-            Debug.Log("links");
+            movement += Vector2.left * walkSpeed;
         }
-        if (Input.GetKey(KeyCode.D))
+        if (Input.GetKey(KeyCode.RightArrow))
         {
-            rb2d.AddForce(Vector2.right * walkSpeed);
-            Debug.Log("rechts");
+            movement += Vector2.right * walkSpeed;
         }
-        if (Input.GetKey(KeyCode.A))
+        if (Input.GetKey(KeyCode.LeftArrow))
         {
-            rb2d.AddForce(-Vector2.right * walkSpeed);
-            Debug.Log("links");
+            movement += Vector2.left * walkSpeed;
         }
-    }
-    private void Dash()
-    {
-        if (Input.GetKeyDown(KeyCode.A))//naar links dashen
-        {
-            if (doubbleTapTime > Time.time && lastKeyCode == KeyCode.A)
-            {
-                //Dash
-            }
-            else
-            {
-                doubbleTapTime = Time.time + 0.5f;
-            }
-        }
-        if (Input.GetKeyDown(KeyCode.A))//naar rechts dashen
-        {
-            if (doubbleTapTime > Time.time && lastKeyCode == KeyCode.D)
-            {
-                //Dash
-            }
-            else
-            {
-                doubbleTapTime = Time.time + 0.5f;
-            }
-        }
+        rb2d.velocity = new Vector2(movement.x, rb2d.velocity.y);
     }
     private void Jump()
     {
@@ -103,7 +81,7 @@ public class PlayerMovement : MonoBehaviour
         Rigidbody2D _rb = gameObject.GetComponent<Rigidbody2D>();
         while (Input.GetButton("Jump"))
         {
-            if(jumpTimeCounter > 0)
+            if (jumpTimeCounter > 0)
             {
                 _rb.velocity = new Vector2(_rb.velocity.x, jumpForce);
                 jumpTimeCounter -= Time.deltaTime;
@@ -111,5 +89,62 @@ public class PlayerMovement : MonoBehaviour
             yield return null;
         }
         isJumping = false;
+    }
+    private void Dash1()
+    {
+        if (isDashing == true)
+        {
+            return;
+        }
+        if (Input.GetKeyDown(KeyCode.LeftArrow))//naar links dashen
+        {
+            if (doubbleTapTime > Time.time && lastKeyCode == KeyCode.LeftArrow)
+            {
+                StartCoroutine(Dash2(-1f));
+            }
+            else
+            {
+                doubbleTapTime = Time.time + 0.5f;
+            }
+            lastKeyCode = KeyCode.LeftArrow;
+        }
+        if (Input.GetKeyDown(KeyCode.RightArrow))//naar rechts dashen
+        {
+            if (doubbleTapTime > Time.time && lastKeyCode == KeyCode.RightArrow)
+            {
+                StartCoroutine(Dash2(1f));
+            }
+            else
+            {
+                doubbleTapTime = Time.time + 0.5f;
+            }
+            lastKeyCode = KeyCode.RightArrow;
+        }
+
+    }
+    IEnumerator Dash2(float direction)
+    {
+        isDashing = true;
+        Vector2 movement = Vector2.zero;
+        movement += new Vector2(dashDistance * direction, 0f);
+        
+
+        /*rb2d.AddForce(new Vector2(dashDistance * direction, 0f), ForceMode2D.Impulse);*/
+        
+
+        float gravity = rb2d.gravityScale;
+        rb2d.gravityScale = 0;
+        float timer = 0.3f;
+        while(timer > 0)
+        {
+            rb2d.velocity = movement;
+            yield return null;
+            timer -= Time.deltaTime;
+        }
+        yield return new WaitForSeconds(0.3f);
+
+        rb2d.gravityScale = gravity;
+
+        isDashing = false;
     }
 }
