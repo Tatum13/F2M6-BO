@@ -51,22 +51,18 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKey(KeyCode.RightArrow) && isGrounded == true)
         {
             movement += Vector2.right * walkSpeed;
-            Debug.Log("rechts");
         }
         if (Input.GetKey(KeyCode.LeftArrow) && isGrounded == true)
         {
             movement += Vector2.left * walkSpeed;
-            Debug.Log("links");
         }
         if (Input.GetKey(KeyCode.RightArrow))
         {
             movement += Vector2.right * walkSpeed;
-            Debug.Log("rechts");
         }
         if (Input.GetKey(KeyCode.LeftArrow))
         {
             movement += Vector2.left * walkSpeed;
-            Debug.Log("links");
         }
         rb2d.velocity = new Vector2(movement.x, rb2d.velocity.y);
     }

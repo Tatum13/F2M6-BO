@@ -4,28 +4,29 @@ using UnityEngine;
 
 public class CarrotStateScript : MonoBehaviour
 {
-
     public float spawnDelay = 3f;
-    public float delay = 1.5f;
+    public float laserDelay = 2.5f;
+    public float carrotDelay = 1.5f;
     private float timer;
     public int amountOfCarrots;
+    public int amountOfLasers;
+    public GameObject player;
     private bool spawnCarrotLeft = true;
     public GameObject carrot;
     private states currentState = states.SPAWNING;
+    public SoundFXScript soundFXScript;
 
     private enum states
     {
         SPAWNING,
         CARROTS,
-        EYEBEAMLAZER
+        EYEBEAMLAZER,
+        DYING
     }
 
     void Start()
     {
         timer = spawnDelay;
-
-        System.Random random = new System.Random();
-        amountOfCarrots = random.Next(4, 7);
     }
 
     void Update()
@@ -33,12 +34,16 @@ public class CarrotStateScript : MonoBehaviour
         switch (currentState)
         {
             case states.SPAWNING:
-                // AFTER 1.18 SECONDS, THE SPAWNING ANIMATION IS OVER.
+                soundFXScript.carrotRise.Play();
                 timer -= Time.deltaTime;
+                System.Random random = new System.Random();
                 if (timer < 0)
                 {
+                    amountOfCarrots = random.Next(4, 7);
+                    soundFXScript.carrotMindmeltStart.Play();
+                    soundFXScript.carrotMindmeltLoop.Play();
                     currentState = states.CARROTS;
-                    timer = delay;
+                    timer = carrotDelay;
                 }
                 break;
 
@@ -47,17 +52,33 @@ public class CarrotStateScript : MonoBehaviour
                 if (timer < 0)
                 {
                     Instantiate(carrot, CalculateCarrotPosition(), Quaternion.identity);
-                    timer = delay;
+                    timer = carrotDelay;
                     amountOfCarrots -= 1;
                     if (amountOfCarrots == 0)
                     {
+                        System.Random random2 = new System.Random();
+                        amountOfLasers = random2.Next(3, 5);
                         currentState = states.EYEBEAMLAZER;
                     }
                 }
                 break;
 
             case states.EYEBEAMLAZER:
-                Debug.Log("next case");
+                timer -= Time.deltaTime;
+                Vector3 target = CalculateLaserTarget();
+                if (timer < 0)
+                {
+                    timer = laserDelay;
+                    amountOfLasers -= 1;
+                    Debug.Log("Laser spawned to: " + target);
+
+                    if (amountOfLasers == 0)
+                    {
+                        System.Random random3 = new System.Random();
+                        amountOfCarrots = random3.Next(4, 7);
+                        currentState = states.CARROTS;
+                    }
+                }
                 break;
         }
 
@@ -81,5 +102,12 @@ public class CarrotStateScript : MonoBehaviour
             spawnCarrotLeft = true;
         }
         return spawnLocation;
+    }
+
+    private Vector3 CalculateLaserTarget()
+    {
+        Vector3 laserTarget = player.transform.position;
+
+        return laserTarget;
     }
 }

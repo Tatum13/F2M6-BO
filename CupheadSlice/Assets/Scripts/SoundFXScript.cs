@@ -6,6 +6,11 @@ public class SoundFXScript : MonoBehaviour
 {
     public AudioSource[] startFX = new AudioSource[4];
 
+    public AudioSource carrotRise;
+    public AudioSource carrotPsychicStart;
+    public AudioSource carrotMindmeltStart;
+    public AudioSource carrotMindmeltLoop;
+
     private int randomInt;
 
     // Start is called before the first frame update
@@ -15,11 +20,5 @@ public class SoundFXScript : MonoBehaviour
         randomInt = random.Next(0, 4);
 
         startFX[randomInt].Play();
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }
