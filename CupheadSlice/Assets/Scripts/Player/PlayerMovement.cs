@@ -81,6 +81,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if (Input.GetButtonDown("Jump") && isGrounded == true)
         {
+            animator.SetBool("IsJumping", true);
             StartCoroutine(JumpCoroutine());
         }
     }
@@ -100,6 +101,7 @@ public class PlayerMovement : MonoBehaviour
             yield return null;
         }
         isJumping = false;
+        animator.SetBool("IsJumping", false);
     }
     private void Dash1()
     {
