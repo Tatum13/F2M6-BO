@@ -16,5 +16,4 @@ public class CarrotHealthScript : MonoBehaviour
             Destroy(gameObject); // Hier komt de animatie.
         }
     }
-
 }

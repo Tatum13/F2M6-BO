@@ -19,6 +19,8 @@ public class PlayerShootScript : MonoBehaviour
     private float shootTimer;
     public float reloadTimer;
 
+    private string lastDirection;
+
     private void Start()
     {
         shootTimer = reloadTimer;
@@ -41,6 +43,10 @@ public class PlayerShootScript : MonoBehaviour
                 {
                     Shoot(shootDirection);
                 }
+                if(Input.GetAxis("Horizontal") >= 0 && Mathf.Abs(shootDirection.magnitude) > 0)
+                {
+                    
+                }
                 shootTimer = 0.0f;
             }
         }
@@ -49,7 +55,6 @@ public class PlayerShootScript : MonoBehaviour
     void Shoot(Vector2 direction)//Maakt de bullet aan en schiet maar rechts.
     {
         GameObject blueBullet = Instantiate(blueBulletPrefab, firePoint.position, firePoint.rotation);
-        //Physics2D.IgnoreCollision(blueBullet.GetComponent<Collider2D>(), GetComponent<Collider2D>());
         Rigidbody2D rb = blueBullet.GetComponent<Rigidbody2D>();
         rb.AddForce(direction);
     }

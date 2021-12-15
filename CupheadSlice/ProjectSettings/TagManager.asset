@@ -10,6 +10,7 @@ TagManager:
   - Sky
   - Road
   - Voorgrond
+  - Carrot
   layers:
   - Default
   - TransparentFX
