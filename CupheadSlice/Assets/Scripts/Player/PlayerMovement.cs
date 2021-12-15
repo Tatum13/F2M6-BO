@@ -17,6 +17,7 @@ public class PlayerMovement : MonoBehaviour
     private float jumpTime;
     private float jumpTimeCounter;
     private float doubbleTapTime;
+    private int speed;
 
     [Header("BOOLS")]
     public bool isGrounded = false;
@@ -27,6 +28,8 @@ public class PlayerMovement : MonoBehaviour
 
     [Header("Unity stuff")]
     KeyCode lastKeyCode;
+    [SerializeField]
+    private Animator animator;
 
 
     private void Start()
@@ -39,6 +42,8 @@ public class PlayerMovement : MonoBehaviour
         WOrD();
         Jump();
         Dash1();
+
+        speed = 0;
     }
     private void WOrD()
     {
@@ -48,23 +53,29 @@ public class PlayerMovement : MonoBehaviour
     private void Walk()
     {
         Vector2 movement = Vector2.zero;
-        if (Input.GetKey(KeyCode.RightArrow) && isGrounded == true)
+        /*if (Input.GetKey(KeyCode.RightArrow) && isGrounded == true)
         {
             movement += Vector2.right * walkSpeed;
+            speed = 1;
         }
         if (Input.GetKey(KeyCode.LeftArrow) && isGrounded == true)
         {
             movement += Vector2.left * walkSpeed;
-        }
+            speed = 1;
+        }*/
         if (Input.GetKey(KeyCode.RightArrow))
         {
             movement += Vector2.right * walkSpeed;
+            speed = 1;
         }
         if (Input.GetKey(KeyCode.LeftArrow))
         {
             movement += Vector2.left * walkSpeed;
+            speed = 1;
         }
         rb2d.velocity = new Vector2(movement.x, rb2d.velocity.y);
+
+        animator.SetFloat("Speed", Mathf.Abs(speed));
     }
     private void Jump()
     {
@@ -126,11 +137,7 @@ public class PlayerMovement : MonoBehaviour
     {
         isDashing = true;
         Vector2 movement = Vector2.zero;
-        movement += new Vector2(dashDistance * direction, 0f);
-        
-
-        /*rb2d.AddForce(new Vector2(dashDistance * direction, 0f), ForceMode2D.Impulse);*/
-        
+        movement += new Vector2(dashDistance * direction, 0f);        
 
         float gravity = rb2d.gravityScale;
         rb2d.gravityScale = 0;
