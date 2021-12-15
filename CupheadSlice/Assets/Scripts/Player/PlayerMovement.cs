@@ -138,6 +138,7 @@ public class PlayerMovement : MonoBehaviour
     IEnumerator Dash2(float direction)
     {
         isDashing = true;
+        animator.SetBool("IsDashing", true);
         Vector2 movement = Vector2.zero;
         movement += new Vector2(dashDistance * direction, 0f);        
 
@@ -155,5 +156,6 @@ public class PlayerMovement : MonoBehaviour
         rb2d.gravityScale = gravity;
 
         isDashing = false;
+        animator.SetBool("IsDashing", false);
     }
 }
