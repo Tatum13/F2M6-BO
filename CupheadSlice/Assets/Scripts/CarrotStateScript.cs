@@ -4,22 +4,25 @@ using UnityEngine;
 
 public class CarrotStateScript : MonoBehaviour
 {
+
+    public float spawnDelay = 3f;
     public float delay = 1.5f;
     private float timer;
     public int amountOfCarrots;
     private bool spawnCarrotLeft = true;
     public GameObject carrot;
-    private AttackStates currentState = AttackStates.CARROTS;
+    private states currentState = states.SPAWNING;
 
-    private enum AttackStates
+    private enum states
     {
+        SPAWNING,
         CARROTS,
         EYEBEAMLAZER
     }
 
     void Start()
     {
-        timer = delay;
+        timer = spawnDelay;
 
         System.Random random = new System.Random();
         amountOfCarrots = random.Next(4, 7);
@@ -29,21 +32,31 @@ public class CarrotStateScript : MonoBehaviour
     {
         switch (currentState)
         {
-            case AttackStates.CARROTS:
-                timer += Time.deltaTime;
-                if (timer > delay)
+            case states.SPAWNING:
+                // AFTER 1.18 SECONDS, THE SPAWNING ANIMATION IS OVER.
+                timer -= Time.deltaTime;
+                if (timer < 0)
+                {
+                    currentState = states.CARROTS;
+                    timer = delay;
+                }
+                break;
+
+            case states.CARROTS:
+                timer -= Time.deltaTime;
+                if (timer < 0)
                 {
                     Instantiate(carrot, CalculateCarrotPosition(), Quaternion.identity);
-                    timer = 0;
+                    timer = delay;
                     amountOfCarrots -= 1;
                     if (amountOfCarrots == 0)
                     {
-                        currentState = AttackStates.EYEBEAMLAZER;
+                        currentState = states.EYEBEAMLAZER;
                     }
                 }
                 break;
 
-            case AttackStates.EYEBEAMLAZER:
+            case states.EYEBEAMLAZER:
                 Debug.Log("next case");
                 break;
         }
