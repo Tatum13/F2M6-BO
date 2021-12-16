@@ -78,6 +78,10 @@ public class PlayerMovement : MonoBehaviour
             movement += Vector2.right * walkSpeed;
             speed = 1;
         }
+        if (Input.GetKey(KeyCode.RightArrow))
+        {
+            movement += Vector2.right * walkSpeed;
+        }
         if (Input.GetKey(KeyCode.LeftArrow))
         {
             movement += Vector2.left * walkSpeed;

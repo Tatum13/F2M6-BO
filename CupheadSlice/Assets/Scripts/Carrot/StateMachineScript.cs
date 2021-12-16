@@ -6,9 +6,23 @@ public class StateMachineScript : MonoBehaviour
 {
     private float health;
 
+    private float screenWidth;
+    private float spawnAreaL;
+    private float spawnAreaR;
+
+    public float timer;
+
+    private bool rightSpawn;
+
+    public GameObject projectile;
+
     void Start()
     {
         Spawning();
+
+        screenWidth = Screen.width; // Schermbreedte wordt gecontroleerd
+        spawnAreaL = screenWidth / 5 * 2; // Linker spawn area (0 tot spawnAreaL)
+        spawnAreaR = screenWidth - screenWidth / 5 * 2; // Rechter spawn area (spawnAreaR tot screenWidth)
     }
 
     private void Update()
@@ -17,6 +31,8 @@ public class StateMachineScript : MonoBehaviour
         {
             Die();
         }
+
+        timer -= Time.deltaTime;
     }
 
     void Spawning()
@@ -31,11 +47,13 @@ public class StateMachineScript : MonoBehaviour
 
     void ShootingProjectiles()
     {
-        // Roep de animatie aan
+        // Choose random between 4 and 6 for the amount of carrots
+        int carrotAmount = createRandomBetween(4, 6);
 
-        // Choose random between 4 and 6
+        // Timer houdt bij of er weer een wortel gespawned kan worden
+        // Spawnlocatie: helft van het scherm - bepaalde offset
 
-        // For random > 0, spawn projectile in the spawnareas, random -1
+
 
         // If random = 0 && health >= 0:
         ShootingLasers();
@@ -64,5 +82,16 @@ public class StateMachineScript : MonoBehaviour
         // Speel geluid af
 
         // Ga naar het deathscreen
+    }
+
+    int createRandomBetween(int a, int b)
+    {
+        int randomNum;
+
+        System.Random random = new System.Random();
+
+        randomNum = random.Next(a, b);
+
+        return randomNum;
     }
 }

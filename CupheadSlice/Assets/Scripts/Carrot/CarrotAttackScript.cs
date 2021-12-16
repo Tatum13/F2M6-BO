@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CarrotAttackScript : MonoBehaviour
 {
-    public float carrorHealth;
+    public float carrotHealth;
 
     public float attackingTimer;
     private float isAttacking;
