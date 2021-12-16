@@ -11,6 +11,7 @@ public class PlayerShootScript : MonoBehaviour
     public Transform firePoint5;//Naar rechts schuin naar boven.
 
     public GameObject blueBulletPrefab;
+    public GameObject blueBulletPrefab1;
 
     private Transform activeFirePoint;
 
@@ -43,10 +44,10 @@ public class PlayerShootScript : MonoBehaviour
                 {
                     Shoot(shootDirection);
                 }
-                if(Input.GetAxis("Horizontal") >= 0 && Mathf.Abs(shootDirection.magnitude) > 0)
-                {
-                    
-                }
+                //if (Input.GetKey(KeyCode.LeftArrow))
+                //{
+                //    Shoot1(new Vector2(100,0));
+                //}
                 shootTimer = 0.0f;
             }
         }
@@ -56,6 +57,12 @@ public class PlayerShootScript : MonoBehaviour
     {
         GameObject blueBullet = Instantiate(blueBulletPrefab, firePoint.position, firePoint.rotation);
         Rigidbody2D rb = blueBullet.GetComponent<Rigidbody2D>();
+        rb.AddForce(direction);
+    }
+    void Shoot1(Vector2 direction)//Maakt de bullet aan en schiet maar rechts.
+    {
+        GameObject blueBullet1 = Instantiate(blueBulletPrefab1, firePoint.position, firePoint.rotation);//Andere prefab?
+        Rigidbody2D rb = blueBullet1.GetComponent<Rigidbody2D>();
         rb.AddForce(direction);
     }
 }

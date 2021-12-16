@@ -279,6 +279,7 @@ MonoBehaviour:
   firePoint4: {fileID: 9161865948696098234}
   firePoint5: {fileID: 3808134728460804217}
   blueBulletPrefab: {fileID: 7686125943124574841, guid: 7c1970493a8c2b747b82e92244da043c, type: 3}
+  blueBulletPrefab1: {fileID: 5681299601211554255, guid: 7a258e79861a6f9419d5f0a69b10fbd9, type: 3}
   blueBulletForce: 50
   reloadTimer: 0.2
 --- !u!114 &223633020674058896

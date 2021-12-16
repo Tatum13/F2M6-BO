@@ -14,6 +14,7 @@ public class CarrotHealthScript : MonoBehaviour
         {
             AudioSource.PlayClipAtPoint(knockOutSound, transform.position);
             Destroy(gameObject); // Hier komt de animatie.
+            //Win screen.
         }
     }
 }
