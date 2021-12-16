@@ -15,6 +15,7 @@ public class CarrotStateScript : MonoBehaviour
     public GameObject carrot;
     private states currentState = states.SPAWNING;
     public SoundFXScript soundFXScript;
+    Animator animator;
 
     private enum states
     {
@@ -26,6 +27,7 @@ public class CarrotStateScript : MonoBehaviour
 
     void Start()
     {
+        animator = GetComponent<Animator>();
         timer = spawnDelay;
     }
 
@@ -40,9 +42,9 @@ public class CarrotStateScript : MonoBehaviour
                 if (timer < 0)
                 {
                     amountOfCarrots = random.Next(4, 7);
+                    currentState = states.CARROTS;
                     soundFXScript.carrotMindmeltStart.Play();
                     soundFXScript.carrotMindmeltLoop.Play();
-                    currentState = states.CARROTS;
                     timer = carrotDelay;
                 }
                 break;
@@ -58,6 +60,10 @@ public class CarrotStateScript : MonoBehaviour
                     {
                         System.Random random2 = new System.Random();
                         amountOfLasers = random2.Next(3, 5);
+                        animator.SetBool("isAttackingCarrots", false);
+                        animator.SetBool("isAttackingPsybeam", true);
+                        soundFXScript.carrotMindmeltLoop.Stop();
+
                         currentState = states.EYEBEAMLAZER;
                     }
                 }
@@ -76,6 +82,10 @@ public class CarrotStateScript : MonoBehaviour
                     {
                         System.Random random3 = new System.Random();
                         amountOfCarrots = random3.Next(4, 7);
+                        animator.SetBool("isAttackingPsybeam", false);
+                        animator.SetBool("isAttackingCarrots", true);
+                        soundFXScript.carrotMindmeltStart.Play();
+                        soundFXScript.carrotMindmeltLoop.Play();
                         currentState = states.CARROTS;
                     }
                 }

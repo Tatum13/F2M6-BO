@@ -1,0 +1,432 @@
+fileFormatVersion: 2
+guid: 44988d4c99a256b4fbb4f59456360b2f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3339775611166952876
+    second: wortel_beam_spritesheet_0
+  - first:
+      213: 3393383476300943766
+    second: wortel_beam_spritesheet_1
+  - first:
+      213: -6681387179267950167
+    second: wortel_beam_spritesheet_2
+  - first:
+      213: -515334923658286422
+    second: wortel_beam_spritesheet_3
+  - first:
+      213: 4281819141860276137
+    second: wortel_beam_spritesheet_4
+  - first:
+      213: -2030045863744744246
+    second: wortel_beam_spritesheet_5
+  - first:
+      213: -7224132140230485555
+    second: wortel_beam_spritesheet_6
+  - first:
+      213: 3053239336571239747
+    second: wortel_beam_spritesheet_7
+  - first:
+      213: 2609136805716032111
+    second: wortel_beam_spritesheet_8
+  - first:
+      213: 5695632269139071213
+    second: wortel_beam_spritesheet_9
+  - first:
+      213: 5660508165426555393
+    second: wortel_beam_spritesheet_10
+  - first:
+      213: 1061446939722083828
+    second: wortel_beam_spritesheet_11
+  - first:
+      213: 2664685732817764114
+    second: wortel_beam_spritesheet_12
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: wortel_beam_spritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 3092
+        width: 924
+        height: 1271
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cad8e153934495e20800000000000000
+      internalID: 3339775611166952876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wortel_beam_spritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 1519
+        y: 3088
+        width: 1010
+        height: 1181
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6911993fa48b71f20800000000000000
+      internalID: 3393383476300943766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wortel_beam_spritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 2894
+        y: 3092
+        width: 1100
+        height: 1168
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a972ec82c1f643a0800000000000000
+      internalID: -6681387179267950167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wortel_beam_spritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 4312
+        y: 3088
+        width: 1169
+        height: 1168
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aaaaef60e9929d8f0800000000000000
+      internalID: -515334923658286422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wortel_beam_spritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 5833
+        y: 3079
+        width: 1207
+        height: 1168
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a7bc0fc2d31c6b30800000000000000
+      internalID: 4281819141860276137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wortel_beam_spritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 7298
+        y: 3096
+        width: 1199
+        height: 1182
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac45eb5ea04d3d3e0800000000000000
+      internalID: -2030045863744744246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wortel_beam_spritesheet_6
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 1532
+        width: 1091
+        height: 1224
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc95413f71abebb90800000000000000
+      internalID: -7224132140230485555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wortel_beam_spritesheet_7
+      rect:
+        serializedVersion: 2
+        x: 1549
+        y: 1532
+        width: 962
+        height: 1525
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34df396fff84f5a20800000000000000
+      internalID: 3053239336571239747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wortel_beam_spritesheet_8
+      rect:
+        serializedVersion: 2
+        x: 2976
+        y: 1540
+        width: 936
+        height: 1436
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6af91bd914853420800000000000000
+      internalID: 2609136805716032111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wortel_beam_spritesheet_9
+      rect:
+        serializedVersion: 2
+        x: 4441
+        y: 1532
+        width: 915
+        height: 1418
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de0594d3f53fa0f40800000000000000
+      internalID: 5695632269139071213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wortel_beam_spritesheet_10
+      rect:
+        serializedVersion: 2
+        x: 6001
+        y: 1536
+        width: 902
+        height: 1422
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10aa2709f2a2e8e40800000000000000
+      internalID: 5660508165426555393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wortel_beam_spritesheet_11
+      rect:
+        serializedVersion: 2
+        x: 7440
+        y: 1532
+        width: 919
+        height: 1409
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fd6f0e2e540bbe00800000000000000
+      internalID: 1061446939722083828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wortel_beam_spritesheet_12
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 54
+        width: 902
+        height: 1422
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21f77ae4e8ddaf420800000000000000
+      internalID: 2664685732817764114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
