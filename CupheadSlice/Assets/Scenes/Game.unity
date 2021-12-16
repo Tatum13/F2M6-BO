@@ -8341,7 +8341,7 @@ MonoBehaviour:
   amountOfCarrots: 0
   amountOfLasers: 0
   player: {fileID: 2113359503}
-  carrot: {fileID: 824149771769902886, guid: 3fff3b38814b4c243ac0c1964849c197, type: 3}
+  carrot: {fileID: 4298101256666312099, guid: 17eaec84b6bcf7742a94f9b6cce97a5b, type: 3}
   soundFXScript: {fileID: 1912425411}
 --- !u!1 &1427968675
 GameObject:
@@ -11392,6 +11392,19 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 6267984033072154888, guid: 431bf2e5e33d9da4e956af56ebe50ea7, type: 3}
   m_PrefabInstance: {fileID: 1803954404}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2113359504
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2113359503}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc497dc7e1cdf194f8bce7f0c8ba8aef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerHealth: 3
 --- !u!1 &2119744852
 GameObject:
   m_ObjectHideFlags: 0
