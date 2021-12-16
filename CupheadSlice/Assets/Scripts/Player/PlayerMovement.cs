@@ -20,6 +20,7 @@ public class PlayerMovement : MonoBehaviour
     private int speed;
 
     [Header("BOOLS")]
+    private bool canMove = true;
     public bool isGrounded = false;
     [SerializeField]
     private bool isJumping = false;
@@ -39,9 +40,18 @@ public class PlayerMovement : MonoBehaviour
 
     private void Update()
     {
-        WOrD();
-        Jump();
-        Dash1();
+        if(canMove == true)
+        {
+            WOrD();
+            Jump();
+            Dash1();
+        }
+
+        if (Input.GetKey(KeyCode.C))
+            canMove = false;
+
+        else
+            canMove = true;
 
         speed = 0;
     }
@@ -133,7 +143,6 @@ public class PlayerMovement : MonoBehaviour
             }
             lastKeyCode = KeyCode.RightArrow;
         }
-
     }
     IEnumerator Dash2(float direction)
     {
