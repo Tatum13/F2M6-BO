@@ -17,8 +17,10 @@ public class PlayerMovement : MonoBehaviour
     private float jumpTime;
     private float jumpTimeCounter;
     private float doubbleTapTime;
+    private int speed;
 
     [Header("BOOLS")]
+    private bool canMove = true;
     public bool isGrounded = false;
     [SerializeField]
     private bool isJumping = false;
@@ -27,6 +29,8 @@ public class PlayerMovement : MonoBehaviour
 
     [Header("Unity stuff")]
     KeyCode lastKeyCode;
+    [SerializeField]
+    private Animator animator;
 
 
     private void Start()
@@ -36,9 +40,20 @@ public class PlayerMovement : MonoBehaviour
 
     private void Update()
     {
-        WOrD();
-        Jump();
-        Dash1();
+        if(canMove == true)
+        {
+            WOrD();
+            Jump();
+            Dash1();
+        }
+
+        if (Input.GetKey(KeyCode.C))
+            canMove = false;
+
+        else
+            canMove = true;
+
+        speed = 0;
     }
     private void WOrD()
     {
@@ -48,28 +63,35 @@ public class PlayerMovement : MonoBehaviour
     private void Walk()
     {
         Vector2 movement = Vector2.zero;
-        if (Input.GetKey(KeyCode.RightArrow) && isGrounded == true)
+        /*if (Input.GetKey(KeyCode.RightArrow) && isGrounded == true)
         {
             movement += Vector2.right * walkSpeed;
+            speed = 1;
         }
         if (Input.GetKey(KeyCode.LeftArrow) && isGrounded == true)
         {
             movement += Vector2.left * walkSpeed;
-        }
+            speed = 1;
+        }*/
         if (Input.GetKey(KeyCode.RightArrow))
         {
             movement += Vector2.right * walkSpeed;
+            speed = 1;
         }
         if (Input.GetKey(KeyCode.LeftArrow))
         {
             movement += Vector2.left * walkSpeed;
+            speed = 1;
         }
         rb2d.velocity = new Vector2(movement.x, rb2d.velocity.y);
+
+        animator.SetFloat("Speed", Mathf.Abs(speed));
     }
     private void Jump()
     {
         if (Input.GetButtonDown("Jump") && isGrounded == true)
         {
+            animator.SetBool("IsJumping", true);
             StartCoroutine(JumpCoroutine());
         }
     }
@@ -89,6 +111,7 @@ public class PlayerMovement : MonoBehaviour
             yield return null;
         }
         isJumping = false;
+        animator.SetBool("IsJumping", false);
     }
     private void Dash1()
     {
@@ -120,17 +143,13 @@ public class PlayerMovement : MonoBehaviour
             }
             lastKeyCode = KeyCode.RightArrow;
         }
-
     }
     IEnumerator Dash2(float direction)
     {
         isDashing = true;
+        animator.SetBool("IsDashing", true);
         Vector2 movement = Vector2.zero;
-        movement += new Vector2(dashDistance * direction, 0f);
-        
-
-        /*rb2d.AddForce(new Vector2(dashDistance * direction, 0f), ForceMode2D.Impulse);*/
-        
+        movement += new Vector2(dashDistance * direction, 0f);        
 
         float gravity = rb2d.gravityScale;
         rb2d.gravityScale = 0;
@@ -146,5 +165,6 @@ public class PlayerMovement : MonoBehaviour
         rb2d.gravityScale = gravity;
 
         isDashing = false;
+        animator.SetBool("IsDashing", false);
     }
 }
