@@ -24,10 +24,11 @@ public class BlueBulletsScript : MonoBehaviour
             {
                 Destroy(gameObject);
             }
-            if (collision.gameObject.tag == "Player" && collision.gameObject.tag == "Sky")
-            {
-
-            }
+        }
+        if(collision.gameObject.tag == "Carrot")
+        {
+            collision.gameObject.GetComponent<SmallCarrotScript>().health -= 1;
+            Destroy(gameObject);
         }
     } 
         void OnBecameInvisible()// Zodra de bullet uit het scherm is dan word die vernietigd.
