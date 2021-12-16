@@ -120,6 +120,7 @@ GameObject:
   - component: {fileID: 2643540752330240235}
   - component: {fileID: 2643540752330240234}
   - component: {fileID: 5477969235228899241}
+  - component: {fileID: 223633020674058896}
   m_Layer: 0
   m_Name: TestPlayer 1
   m_TagString: Player
@@ -278,8 +279,22 @@ MonoBehaviour:
   firePoint4: {fileID: 9161865948696098234}
   firePoint5: {fileID: 3808134728460804217}
   blueBulletPrefab: {fileID: 7686125943124574841, guid: 7c1970493a8c2b747b82e92244da043c, type: 3}
+  blueBulletPrefab1: {fileID: 5681299601211554255, guid: 7a258e79861a6f9419d5f0a69b10fbd9, type: 3}
   blueBulletForce: 50
   reloadTimer: 0.2
+--- !u!114 &223633020674058896
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2643540752330240231}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc497dc7e1cdf194f8bce7f0c8ba8aef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerHealth: 3
 --- !u!1 &4337493837435149940
 GameObject:
   m_ObjectHideFlags: 0
