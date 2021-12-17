@@ -393,7 +393,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 47611344}
-  - component: {fileID: 47611345}
   m_Layer: 0
   m_Name: Clouds
   m_TagString: Untagged
@@ -426,18 +425,6 @@ Transform:
   m_Father: {fileID: 511007927}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &47611345
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 47611343}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 948dabca4d1e182458ca891692778797, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &51780747
 GameObject:
   m_ObjectHideFlags: 0
@@ -1240,7 +1227,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 246696956}
-  - component: {fileID: 246696957}
   m_Layer: 0
   m_Name: Clouds (3)
   m_TagString: Untagged
@@ -1273,18 +1259,6 @@ Transform:
   m_Father: {fileID: 511007927}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &246696957
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 246696955}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 948dabca4d1e182458ca891692778797, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &258305235
 GameObject:
   m_ObjectHideFlags: 0
@@ -3429,7 +3403,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 620681199}
-  - component: {fileID: 620681200}
   m_Layer: 0
   m_Name: Clouds (2)
   m_TagString: Untagged
@@ -3462,18 +3435,6 @@ Transform:
   m_Father: {fileID: 511007927}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &620681200
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 620681198}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 948dabca4d1e182458ca891692778797, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &655650470
 GameObject:
   m_ObjectHideFlags: 0
@@ -5135,7 +5096,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 835003043}
-  - component: {fileID: 835003044}
   m_Layer: 0
   m_Name: Clouds (4)
   m_TagString: Untagged
@@ -5168,18 +5128,6 @@ Transform:
   m_Father: {fileID: 511007927}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &835003044
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 835003042}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 948dabca4d1e182458ca891692778797, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &864806202
 GameObject:
   m_ObjectHideFlags: 0
@@ -10592,7 +10540,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1938435612}
-  - component: {fileID: 1938435613}
   m_Layer: 0
   m_Name: Clouds (5)
   m_TagString: Untagged
@@ -10625,18 +10572,6 @@ Transform:
   m_Father: {fileID: 511007927}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1938435613
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1938435611}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 948dabca4d1e182458ca891692778797, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1944083582
 GameObject:
   m_ObjectHideFlags: 0

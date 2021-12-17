@@ -20,6 +20,7 @@ public class SmallCarrotScript2 : MonoBehaviour
     {
         transform.position = Vector2.MoveTowards(transform.position, target.transform.position, speed * Time.deltaTime);
 
+        transform.LookAt(target);
         transform.up = transform.position - target.position;
 
         if (health <= 0)

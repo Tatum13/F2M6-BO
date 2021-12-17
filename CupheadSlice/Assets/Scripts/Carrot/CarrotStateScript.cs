@@ -21,7 +21,7 @@ public class CarrotStateScript : MonoBehaviour
     {
         SPAWNING,
         CARROTS,
-        EYEBEAMLAZER,
+        EYEBEAMLASER,
         DYING
     }
 
@@ -64,12 +64,12 @@ public class CarrotStateScript : MonoBehaviour
                         animator.SetBool("isAttackingPsybeam", true);
                         soundFXScript.carrotMindmeltLoop.Stop();
 
-                        currentState = states.EYEBEAMLAZER;
+                        currentState = states.EYEBEAMLASER;
                     }
                 }
                 break;
 
-            case states.EYEBEAMLAZER:
+            case states.EYEBEAMLASER:
                 timer -= Time.deltaTime;
                 Vector3 target = CalculateLaserTarget();
                 if (timer < 0)
