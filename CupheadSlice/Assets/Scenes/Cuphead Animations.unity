@@ -130,6 +130,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 373304196, guid: 431bf2e5e33d9da4e956af56ebe50ea7, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2.2363439
+      objectReference: {fileID: 0}
+    - target: {fileID: 373304196, guid: 431bf2e5e33d9da4e956af56ebe50ea7, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2.236344
+      objectReference: {fileID: 0}
+    - target: {fileID: 373304196, guid: 431bf2e5e33d9da4e956af56ebe50ea7, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6267984033072154888, guid: 431bf2e5e33d9da4e956af56ebe50ea7, type: 3}
       propertyPath: m_Name
       value: Cuphead
